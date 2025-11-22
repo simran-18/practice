@@ -1,0 +1,41 @@
+@import "tailwindcss";
+.icon {
+  display: inline-block;
+  background-image: url("../assets/spritesheet.png");
+  background-repeat: no-repeat;
+  background-size: 64px 32px; /* total size of your sprite sheet */
+}
+
+/* Each icon uses background-position to show its part of the sprite */
+.icon.circle {
+  background-position: 5px 5px;
+}
+
+.icon.check {
+  background-position: 37px 5px; /* moves to second icon */
+}
+.star-rating {
+ width: 100vw;
+ height: 100vh;
+}
+.star-container {
+ display: flex;
+ flex-direction: row;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
+}
+
+.star {
+ font-size: 50px;
+ color: gray;
+ cursor: pointer;
+}
+.star.full {
+ color: gold;
+}
+.star.half{
+  background: linear-gradient(90deg,gold 50%,gray 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
