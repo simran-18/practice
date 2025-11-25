@@ -9,6 +9,7 @@ import InfiniteScroll from "./components/InfiniteScroll";
 import Accordian from "./components/Accordian";
 import Comment from "./components/Comment";
 import ImageSlider from "./components/ImageSlider";
+import TrafficLight from "./components/TrafficLight";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/accordian" element={<Accordian/>} />
         <Route path="/comment" element={<Comment/>} />
         <Route path="/slider" element={<ImageSlider/>} />
+        <Route path="/light" element={<TrafficLight/>} />
       </Routes>
      </Router>
     </div>
