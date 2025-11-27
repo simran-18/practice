@@ -25,18 +25,17 @@ const TrafficLight = () => {
         return lights[nextIndex];
       });
     }, durations[activeLight]);
-
     return () => clearTimeout(timeOut);
   }, [activeLight]);
 
   return (
-    <div className="h-screen w-screen">
-      <div className="flex flex-col gap-3 justify-center items-center h-full bg-black/30">
+    <div className="h-screen w-screen bg-black/5 flex justify-center items-center">
+      <div className="flex flex-col gap-3 bg-black h-fit w-fit p-4 shadow-2xl rounded-2xl">
         {lights.map((light, index) => (
           <div
             key={index}
             className={`p-6 rounded-full transition-colors duration-300 ${
-              activeLight === light ? lightColor[light] : "bg-black/50"
+              activeLight === light ? lightColor[light] : "bg-gray-700"
             }`}
           ></div>
         ))}
