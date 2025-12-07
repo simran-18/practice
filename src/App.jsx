@@ -10,6 +10,9 @@ import Accordian from "./components/Accordian";
 import Comment from "./components/Comment";
 import ImageSlider from "./components/ImageSlider";
 import TrafficLight from "./components/TrafficLight";
+import Pagination from "./components/pagination/Pagination";
+import GoogleSheet from "./components/GoogleSheet";
+import Counter from "./components/Counter";
 
 function App() {
   return (
@@ -25,8 +28,11 @@ function App() {
         <Route path="/scrolling" element={<InfiniteScroll/>} />
         <Route path="/accordian" element={<Accordian/>} />
         <Route path="/comment" element={<Comment/>} />
+        <Route path="/counter" element={<Counter/>} />
         <Route path="/slider" element={<ImageSlider/>} />
         <Route path="/light" element={<TrafficLight/>} />
+        <Route path="/pagination" element={<Pagination/>} />
+        <Route path="/sheet" element={<GoogleSheet/>} />
       </Routes>
      </Router>
     </div>
