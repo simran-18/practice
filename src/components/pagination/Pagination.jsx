@@ -14,11 +14,13 @@ const Pagination = () => {
       );
 
       const data = await response.json();
-
+      console.log("data is::",data)
       setTotalPages(Math.ceil(data.total / LIMIT));
       setProducts(data.products);
     } catch (err) {
       console.log("error is:::", err);
+    }finally{
+      console.log("finally is executed")
     }
   };
 
